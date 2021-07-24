@@ -2,7 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.187.0/containers/docker-from-docker-compose
 {
 	"name": "C++ DEV",
-	"dockerComposeFile": "../docker-compose.yml",
+	"dockerComposeFile": "./docker-compose.yml",
 	"service": "dev_c",
 	"shutdownAction": "none",
 	"workspaceFolder": "/workspace",
