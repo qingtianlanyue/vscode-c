@@ -7,10 +7,13 @@ services:
       dockerfile: Dockerfile
 
     init: true
-
+    volumes:
+      - vscode-volume:/root/.vscode-server/extensions
     # Overrides default command so things don't shut down after the process ends.
     cap_add:
     - SYS_PTRACE
     security_opt:
     - seccomp:unconfined
     command: /bin/sh -c "while sleep 1000; do :; done"
+  volumes:
+    vscode-volume: 
